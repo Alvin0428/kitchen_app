@@ -22,6 +22,16 @@ class _TimerWidgetState extends State<TimerWidget> with AutomaticKeepAliveClient
   final TextEditingController _secondsController = TextEditingController();
 
   void _addTimer(String name, Duration duration) {
+    if (duration.inSeconds <= 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Invalid time entered. Please enter a positive value.'),
+          duration: Duration(seconds: 3),
+        ),
+      );
+      return;
+    }
+
     final timerEntry = TimerEntry(name: name, initialDuration: duration);
     setState(() {
       timers.add(timerEntry);
