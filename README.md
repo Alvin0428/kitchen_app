@@ -17,9 +17,7 @@ Timers: Set and manage multiple customizable timers.
 
 Prerequisites:
 
-Install Vscode
-
-Install Flutter
+Install Eclipse
 
 ### Future Work
 
