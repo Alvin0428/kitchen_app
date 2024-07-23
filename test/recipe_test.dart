@@ -4,7 +4,7 @@ import 'package:kitchen_app/main.dart';
 import 'package:kitchen_app/recipe.dart';
 
 /**
- * Unit tests for the RecipeWidget in the kitchen app.
+ * Unit tests for the RecipeWidget in kitchen app.
  * 
  * This test suite contains tests to verify the functionality of loading and displaying recipes,
  * as well as displaying recipe ingredients and steps.
