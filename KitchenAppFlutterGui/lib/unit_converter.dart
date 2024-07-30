@@ -159,14 +159,14 @@ class _UnitConverterState extends State<UnitConverter> {
 
   void _convert() {
     final value = double.tryParse(_inputController.text);
-    if (value != null) {
+    if (value != null && value >= 0 && value <= 100000) {
       final convertedValue = value * (conversionRates[_fromUnit]![_toUnit] ?? 1);
       setState(() {
         _result = '$value $_fromUnit = ${convertedValue.toStringAsFixed(2)} $_toUnit';
       });
     } else {
       setState(() {
-        _result = 'Please enter a valid number';
+        _result = 'Please enter a valid number between 0 and 100000';
       });
     }
   }
