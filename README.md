@@ -18,6 +18,7 @@ Timers: Set and manage multiple customizable timers.
 Prerequisites:
 
 Install Eclipse
+Install Flutter
 
 ### Future Work
 
